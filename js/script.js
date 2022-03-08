@@ -6,8 +6,10 @@
 */
 
 const arrayNumberRandom = []
+const arrayNumberUser = []
 
 console.log(arrayNumberRandom)
+console.log(arrayNumberUser)
 
 
 
@@ -19,7 +21,7 @@ for(let i = 0; i < 5; i++){
 
 
 
-setTimeout(deleteNumber, 5000);
+setTimeout(deleteNumber, 3000);
 
 function deleteNumber(){
     document.getElementById("numeri-casuali").innerHTML = "";
@@ -29,12 +31,13 @@ clearTimeout(deleteNumber);
 
 
 
-setTimeout(myTimeout, 5000);
+setTimeout(myTimeout, 3000);
 
 function myTimeout(){
     for(let i = 0; i < 5; i++){
         let userNum = parseInt(prompt("inserisci un numero")) 
         console.log(userNum)
+        arrayNumberUser.push(userNum); 
     }
 };
 
